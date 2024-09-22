@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333333;
+}
+
+.converter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+.input-group input,
+.input-group select {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+#convert-btn {
+    flex: 1 1 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#convert-btn:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#converted-amount {
+    font-size: 24px;
+    color: #007BFF;
+}
+
+.chart-container {
+    position: relative;
+    height: 400px;
+}
