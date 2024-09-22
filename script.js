@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const amountInput = document.getElementById('amount');
     const baseCurrencySelect = document.getElementById('base-currency');
@@ -10,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let historicalChart;
 
     // Your API key
-    const API_KEY = '78a2bcc9ba84fc19d14147c26580ae91'; // Replace with your actual API key
+    const API_KEY = 'YOUR_API_KEY'; // Replace with your actual API key
 
     // Base API URL
     const BASE_URL = 'https://api.exchangerate.host/live'; // Replace with your API's base URL
@@ -78,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Fetch historical exchange rates for the past 30 days
+    // Historical 30 day data
     async function fetchHistoricalData(base, target) {
         const endDate = new Date();
         const startDate = new Date();
@@ -158,7 +156,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Event listeners
     convertBtn.addEventListener('click', convertCurrency);
 
     // Initialize
